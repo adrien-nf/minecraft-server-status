@@ -17,5 +17,6 @@
 			"email": "iamnautilusjungle@gmail.com"
 		}
 	],
-	"require": {}
+	"require": {},
+	"license": "MIT"
 }
