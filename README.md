@@ -31,8 +31,9 @@ echo $infos->isPaper(); // false
 ```
 ### Query
 Requires configuration in `server.properties`:
-`enable-query=true`
-`query.port=25565`
+- `enable-query=true`
+- `query.port=25565`
+
 Once this is done, usage is pretty straightforward.
 ```php
 use Queries\JavaServerQuery;
@@ -55,4 +56,4 @@ var_dump($infos->getPluginsAsArray()) // ["Shopkeepers", "HolographicDisplays"]
 var_dump($infos->getPluginsAsArray(true)) // ["Shopkeepers 2.17.1", "HolographicDisplays 3.0.2"]
 ```
 ## Credits
-This package has been inspired by [xPaw's]("https://github.com/xPaw/PHP-Minecraft-Query") package, extended and corrected for simpler usage.
+This package has been inspired by [xPaw's](https://github.com/xPaw/PHP-Minecraft-Query) package, extended and corrected for simpler usage.
