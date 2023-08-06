@@ -1,0 +1,21 @@
+{
+	"name": "adrien-nf/minecraft-server-status",
+	"description": "Get informations from a Minecraft server in real time.",
+	"type": "library",
+	"minimum-stability": "dev",
+	"autoload": {
+		"psr-4": {
+			"Data\\": "src/Data",
+			"Ping\\": "src/Ping",
+			"Queries\\": "src/Queries",
+			"Services\\": "src/Services"
+		}
+	},
+	"authors": [
+		{
+			"name": "Adrien N. F.",
+			"email": "iamnautilusjungle@gmail.com"
+		}
+	],
+	"require": {}
+}
