@@ -54,7 +54,7 @@ class PingInfos
 
 		return [
 			"version" => $version,
-			"serverType" => $serverType ?? "Vanilla"
+			"serverType" => empty($serverType) ? "Vanilla" : $serverType
 		];
 	}
 
@@ -148,5 +148,10 @@ class PingInfos
 	public function getPlayers(): array
 	{
 		return $this->players;
+	}
+
+	public function isPlayerConnected(string $name): bool
+	{
+		return in_array($name, $this->getPlayers());
 	}
 }
