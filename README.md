@@ -45,7 +45,6 @@ echo $infos->getWorldName(); // world
 
 // With Query, you get a full players list
 var_dump($infos->getPlayers()); // ["Notch", "Deadmau5", "Jeb"]
-
 var_dump($infos->getPlugins()); // [["name" => "Shopkeepers", "version" => "2.17.1"], ["name" => "HolographicDisplays", "version" => "3.0.2"]]
 
 // Some helper functions
