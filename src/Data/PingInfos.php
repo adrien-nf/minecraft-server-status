@@ -154,4 +154,18 @@ class PingInfos
 	{
 		return in_array($name, $this->getPlayers());
 	}
+
+	public function toArray(): array
+	{
+		return [
+			"version" => $this->getVersion(),
+			"serverType" => $this->getServerType(),
+			"motd" => $this->getMotd(),
+			"maxPlayers" => $this->getMaxPlayers(),
+			"playersCount" => $this->getPlayersCount(),
+			"ip" => $this->getIp(),
+			"port" => $this->getPort(),
+			"players" => $this->getPlayers()
+		];
+	}
 }

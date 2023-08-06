@@ -68,4 +68,13 @@ class QueryInfos extends PingInfos
 	{
 		return $this->getWorldName();
 	}
+
+	public function toArray(): array
+	{
+		return array_merge(parent::toArray(), [
+			"gameType" => $this->getGameType(),
+			"plugins" => $this->getPlugins(),
+			"worldName" => $this->getWorldName()
+		]);
+	}
 }
